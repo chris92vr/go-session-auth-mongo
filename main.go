@@ -13,7 +13,6 @@ func main() {
 	if port == "" {
 		port = "8000"
 	}
-
 	http.HandleFunc("/signin", Login)
 	http.HandleFunc("/signup", Signup)
 	http.HandleFunc("/welcome", Welcome)
